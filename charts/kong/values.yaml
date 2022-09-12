@@ -85,6 +85,13 @@ env:
   # controller generates traditional routes. if you do not use the controller,
   # you may set this to "traditional_compatible" or "expression" to use the new
   # DSL-based router
+  database: "postgres"
+  pg_host : database-1.co1nl4jfukd3.us-east-1.rds.amazonaws.com
+  pg_port : 5432
+  pg_timeout : 5000
+  pg_user : postgres
+  pg_password : postgres
+  pg_database : database-1
   router_flavor: "traditional"
   nginx_worker_processes: "2"
   proxy_access_log: /dev/stdout
